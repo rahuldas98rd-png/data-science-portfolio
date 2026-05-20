@@ -216,3 +216,30 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Data Science additions ---
+
+# Raw, interim, processed data (commit only small samples if needed)
+projects/**/data/raw/*
+projects/**/data/interim/*
+projects/**/data/processed/*
+!projects/**/data/**/.gitkeep
+
+# Trained models
+projects/**/models/*
+!projects/**/models/.gitkeep
+
+# Scratch work
+notebooks_scratch/
+*.bak
+
+# Secrets and credentials
+.env
+.kaggle/
+*.key
+
+# OS / IDE noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
