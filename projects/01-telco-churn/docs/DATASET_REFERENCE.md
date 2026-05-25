@@ -155,9 +155,3 @@ Before you do any more analysis, internalize this hierarchy of expected importan
 **Building this expectation BEFORE looking at the data** is what separates analysts from script-runners. Your job in EDA is to **confirm or refute** these hypotheses with evidence. If gender turns out to be predictive in your model, that's a red flag worth investigating — not a finding.
 
 ---
-
-## Now go back to Q3
-
-With this context, look at the 11 rows where `TotalCharges` is blank. Look at every column. The pattern will jump out at you — and it'll explain *exactly* why those rows are missing, in a way that's perfectly consistent with how telecom billing works.
-
-Once you see the pattern, the next question is: **given the pattern, what's the right way to handle these 11 rows?** Drop them? Impute zero? Treat them as a separate signal? There's a defensible answer for each — what matters is that your choice is *grounded in the business reality you just figured out*, not in a mechanical "always drop nulls" rule.
